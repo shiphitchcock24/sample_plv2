@@ -1,6 +1,6 @@
 jobs:
   - name: plv2-man5
-    type: Manifest
+    type: manifest
     steps:
       - IN: plv2-image12
        # versionNumber: 10000
