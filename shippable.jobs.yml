@@ -101,7 +101,7 @@ jobs:
       #- IN: flecs-dopts5
       - IN: tripub-cluster4
       
-  - name: runShT111
+  - name: runShT1
     type: runSh
   # #  serial: true
     steps:
