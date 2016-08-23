@@ -100,12 +100,14 @@ jobs:
       - IN: plv2-man5
       #- IN: flecs-dopts5
       - IN: tripub-cluster4
-        
-        
-        #gitRepo
-  - name: sample-scriptT1
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiphitchcock24/sample-script-3
-      branch: master
+      
+  - name: runShT111
+    type: runSh
+  # #  serial: true
+    steps:
+      - IN: sample-scriptT1
+      - IN: triggerv2sp1
+      - TASK:
+        - script: ./IN/sample-scriptT1/gitRepo/echo.sh
+
+      
