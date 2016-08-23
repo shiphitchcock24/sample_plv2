@@ -7,126 +7,126 @@ resources:
     flags:
       - ddc-cluster
 
-  - name: cluster-dcl
-    type: cluster
-    integration: ship-dcl
-    pointer:
-      sourceName: "cluster-dcl"
-    flags:
-      - cluster-dcl
+#   - name: cluster-dcl
+#     type: cluster
+#     integration: ship-dcl
+#     pointer:
+#       sourceName: "cluster-dcl"
+#     flags:
+#       - cluster-dcl
       
-  - name: cluster-dclinavlid
-    type: cluster
-    integration: ship-dcl
-    pointer:
-    sourceName: "cluster-dcl"
-    flags:
-      - cluster-dcl
+#   - name: cluster-dclinavlid
+#     type: cluster
+#     integration: ship-dcl
+#     pointer:
+#     sourceName: "cluster-dcl"
+#     flags:
+#       - cluster-dcl
 
-  - name: ecs-cluster
-    type: cluster
-    integration: ship-awsnew
-    pointer:
-      sourceName : "default"
-      region: "us-west-2"
-    flags:
-      - ecs-cluster
+#   - name: ecs-cluster
+#     type: cluster
+#     integration: ship-awsnew
+#     pointer:
+#       sourceName : "default"
+#       region: "us-west-2"
+#     flags:
+#       - ecs-cluster
       
-  - name: gke-cluster
-    type: cluster
-    integration: ship-gke
-    pointer:
-      sourceName: "small-cluster" #name of the cluster we are deploying.
-      region: "us-east1-d"
-    flags:
-      - gke-cluster
+#   - name: gke-cluster
+#     type: cluster
+#     integration: ship-gke
+#     pointer:
+#       sourceName: "small-cluster" #name of the cluster we are deploying.
+#       region: "us-east1-d"
+#     flags:
+#       - gke-cluster
       
-  - name: tripub-cluster3
-    type: cluster
-    integration: ship-tri
-    pointer:
-      sourceName: "default" # we can give anything it deploy instances based on region not by cluster name
-      region: "us-east-2"
-    flags:
-      - tripub-cluster3
+#   - name: tripub-cluster3
+#     type: cluster
+#     integration: ship-tri
+#     pointer:
+#       sourceName: "default" # we can give anything it deploy instances based on region not by cluster name
+#       region: "us-east-2"
+#     flags:
+#       - tripub-cluster3
       
-  - name: plv2-image12
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shippabledocker/pipelinev2"
-    seed:
-      versionName: "deploy.1"
+#   - name: plv2-image12
+#     type: image
+#     integration: ship4-docker
+#     pointer:
+#       sourceName: "shippabledocker/pipelinev2"
+#     seed:
+#       versionName: "deploy.1"
       
-  - name: plv21
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: "latest"
+#   - name: plv21
+#     type: image
+#     integration: ship4-docker
+#     pointer:
+#       sourceName: "library/nginx"
+#     seed:
+#       versionName: "latest"
       
-  - name: myEmail
-    type: notification
-    integration: email
-    pointer:
-      recipients: 
-        -  "sreya@shippable.com"
+#   - name: myEmail
+#     type: notification
+#     integration: email
+#     pointer:
+#       recipients: 
+#         -  "sreya@shippable.com"
       
-  - name: plv2-image2
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
-    seed:
-      versionName: "deploy.5"
+#   - name: plv2-image2
+#     type: image
+#     integration: ship4-docker
+#     pointer:
+#       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
+#     seed:
+#       versionName: "deploy.5"
 
-  - name: plv2-dopts1
-    type: dockerOptions
-    version:
-      memory: 64
-      cpuShares: 8
-      portMappings:
-        - "80:80"
+#   - name: plv2-dopts1
+#     type: dockerOptions
+#     version:
+#       memory: 64
+#       cpuShares: 8
+#       portMappings:
+#         - "80:80"
       
-#  - name: plv2-tpdopts2
- #   type: dockerOptions
-  #  version:
-   #   memory: 128
-      #Triton has standard values for memory 128,512 etc.
-      #If non standard values is given in the memory, it chooses the closest
-      #standard memory value. Triton also uses this value to choose the plan
-      #and cpu-shares
-    #  publishAllPorts : true
-      #publishAllPorts assigns a public ip to the container and gives endpoint
-      #for accessing the exposed ports.
+# #  - name: plv2-tpdopts2
+# #   type: dockerOptions
+#   #  version:
+#   #   memory: 128
+#       #Triton has standard values for memory 128,512 etc.
+#       #If non standard values is given in the memory, it chooses the closest
+#       #standard memory value. Triton also uses this value to choose the plan
+#       #and cpu-shares
+#     #  publishAllPorts : true
+#       #publishAllPorts assigns a public ip to the container and gives endpoint
+#       #for accessing the exposed ports.
   
-  - name: plv2-params1
-    type: params
-    version:
-      params:
-        MONGO_API_URL: "localhost:28017"
+#   - name: plv2-params1
+#     type: params
+#     version:
+#       params:
+#         MONGO_API_URL: "localhost:28017"
       
-  - name: plv2-scale2
-    type: replicas
-    version:
-      count: 2
-    flags:
-      - plv2-scale2
+#   - name: plv2-scale2
+#     type: replicas
+#     version:
+#       count: 2
+#     flags:
+#       - plv2-scale2
   
-  - name: plv2-version
-    type: version
-    seed:
-      versionName: "1.1.1-beta"
+#   - name: plv2-version
+#     type: version
+#     seed:
+#       versionName: "1.1.1-beta"
       
-  - name: glab-kickstart
-    type: kickStart
-    version: 
-      counter: 1
+#   - name: glab-kickstart
+#     type: kickStart
+#     version: 
+#       counter: 1
 
- # - name: infra-repo
-  #  type: gitRepo
-  #  integration: github
-   # pointer:
-  #    sourceName: shiphitchcock24/sampleRub
-   #   branch: master
+# # - name: infra-repo
+#   #  type: gitRepo
+#   #  integration: github
+#   # pointer:
+#   #    sourceName: shiphitchcock24/sampleRub
+#   #   branch: master
