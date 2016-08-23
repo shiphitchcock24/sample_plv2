@@ -145,6 +145,12 @@ resources:
       sourceName: "scriptnull/busybox"
     seed:
       versionName: "nodeenv"
+  - name: sample-scriptT1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock24/sample-script-3
+      branch: master
  # - name: infra-repo
   #  type: gitRepo
   #  integration: github
