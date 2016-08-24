@@ -127,7 +127,7 @@ resources:
   - name: flecs-dopts5
     type: dockerOptions
     version:
-      links:
+      links1:
         - "fl-img5workingdir"
       volumesFrom:
         - "fl-img5workingdir:ro"
