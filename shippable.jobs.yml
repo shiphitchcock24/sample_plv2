@@ -13,7 +13,7 @@ jobs:
       #- IN: plv2-envimage
       - IN: plv2-params1
       - IN: plv2dcl2-manifestTWO
-      - IN: release-versionn5
+      - IN: lb-loadb1
         #switch: off
        # applyTo:
         #  - plv2-envimage
@@ -50,7 +50,7 @@ jobs:
     type: release
     steps:
       - IN: plv2-version
-      #- IN: plv2-man5
+      - IN: plv2-man5
       #- IN: triggerv2sp2
       - TASK: managed
     #  bump: major
