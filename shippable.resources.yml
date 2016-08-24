@@ -168,6 +168,11 @@ resources:
     version:
       memory: 100
       cpuShares: 2
+      
+  - name: lb-loadb1
+    type: loadBalancer
+    pointer:
+      sourceName: EC2Contai-EcsElast-17A64D22JHQLM
 #foo: bar2
  # - name: infra-repo
   #  type: gitRepo
