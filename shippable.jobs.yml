@@ -9,7 +9,7 @@ jobs:
     type: manifest
     steps:
       - IN: plv2-image12
-        versionName: "deploy.1"
+        versionName: "deploynew"
       #- IN: plv2-envimage
       - IN: plv2-params1
       - IN: plv2dcl2-manifestTWO
