@@ -3,13 +3,13 @@ jobs:
     type: manifest
     steps:
       - IN: plv2-image12
-        versionName: "deploy.1"
+       # versionName: "deploy.1"
       - IN: plv21
        # versionNumber: 1000
       #- IN: plv2-envimage
       - IN: plv2-params1
-        applyTo:
-          plv2-image12 
+       # applyTo:
+         # plv2-image12 
         #switch: off
       #- IN: plv2dcl2-manifestTWO
       #- OUT: plv21
@@ -24,9 +24,16 @@ jobs:
       - TASK: managed
     #  - IN: varsha
     on_success:
+      - NOTIFY: myEmail
+      - NOTIFY: mySlack
       - script: echo 'this is on_success step of dv-man of type manifest'
     on_failure:
+      - NOTIFY: myEmail
+      - NOTIFY: mySlack
       - script: echo 'this is on_failure step of dv-man of type manifest'
+    on_start:
+      - NOTIFY: myEmail
+      - NOTIFY: mySlack
      
   - name: plv2dcl-man1
     type: manifest
