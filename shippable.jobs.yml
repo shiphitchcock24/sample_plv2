@@ -7,6 +7,7 @@ jobs:
       #- IN: plv2-envimage
       - IN: plv2-params1
       - IN: flecs-dopts5
+      - IN: dep-dopts1
         #switch: off
        # applyTo:
         #  - plv2-envimage
