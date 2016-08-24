@@ -98,7 +98,7 @@ jobs:
     type: deploy
     steps: 
       - IN: foo-resource
-      - IN: plv2-man5
+      - IN: plv2-man5 
       - IN: flecs-dopts5
       - IN: tripub-cluster4
       
