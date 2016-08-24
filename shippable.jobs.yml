@@ -105,7 +105,7 @@ jobs:
     type: runSh
   # #  serial: true
     steps:
-      - IN: sample-scriptT1
+      - IN: sample-scriptTS1
       - IN: triggerv2sp1
       - TASK:
         - script: ./IN/sample-scriptT1/gitRepo/echo.sh
