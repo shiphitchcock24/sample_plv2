@@ -10,7 +10,7 @@ jobs:
     steps:
       - IN: plv2-image12
       - IN: plv21
-        #versionNumber: 1000
+        versionNumber: 1000
       #- IN: plv2-envimage
       - IN: plv2-params1
         applyTo:
