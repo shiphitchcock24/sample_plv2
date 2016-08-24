@@ -19,7 +19,7 @@ jobs:
         #  - plv2-envimage
     #  - IN: flecs-dopts5
      # - IN: infra-repo
-      - IN: triggerv2sp1
+      - IN: triggerv2spP1
     #  - IN: varsha
     #on_success:
      # - echo 'this is on_success step of dv-man of type manifest'
