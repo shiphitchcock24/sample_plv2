@@ -12,3 +12,8 @@ triggers:
      type: trigger
      version:
        counter: 166
+   
+   - name: triggerv2spP1
+     type: trigger
+     version:
+       counter: 1
