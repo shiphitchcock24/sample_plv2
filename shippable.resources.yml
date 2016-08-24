@@ -157,6 +157,12 @@ resources:
     version:
       links:
         - "plv2-manifest8redis_0_0_055d5014-109c-4c84-9bbe-3009a523:testenv"
+  - name: envp1
+    type: params
+    version:
+      params:
+        foo: bar1
+#foo: bar2
  # - name: infra-repo
   #  type: gitRepo
   #  integration: github
