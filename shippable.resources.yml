@@ -145,7 +145,7 @@ resources:
       sourceName: "scriptnull/busybox"
     seed:
       versionName: "nodeenv"
-  - name: sample-scriptT1
+  - name: sample-scriptTS1
     type: gitRepo
     integration: github
     pointer:
