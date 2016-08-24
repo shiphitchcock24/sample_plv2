@@ -68,10 +68,17 @@ resources:
       
   - name: myEmail
     type: notification
-    integration: email
+    #integration: email
     pointer:
       recipients: 
         -  "sreya@shippable.com"
+        
+  - name: mySlack
+    type: notification
+    integration: ship-slack1
+    pointer:
+      recipients:
+        - "#random"
       
   - name: plv2-image2
     type: image
