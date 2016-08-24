@@ -2,9 +2,9 @@ jobs:
   - name: plv2dcl2-manifestTWO
     type: manifest
     steps:
-       - IN: plv2-image12
-       - IN: infra-repo
-       - IN: triggerv2sp1
+      - IN: plv2-image12
+      #- IN: infra-repo
+      - IN: triggerv2sp1
   - name: plv2-man5
     type: manifest
     steps:
