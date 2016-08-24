@@ -151,6 +151,12 @@ resources:
     pointer:
       sourceName: shiphitchcock24/sample-script-3
       branch: master
+      
+  - name: fl-dopts6invalid
+    type: dockerOptions
+    version:
+      links:
+        - "plv2-manifest8redis_0_0_055d5014-109c-4c84-9bbe-3009a523:testenv"
  # - name: infra-repo
   #  type: gitRepo
   #  integration: github
