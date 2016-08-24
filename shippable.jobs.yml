@@ -1,14 +1,9 @@
 jobs:
-  - name: plv2dcl2-manifestTWO
-    type: manifest
-    steps:
-      - IN: plv2-image12
-      #- IN: infra-repo
-      - IN: triggerv2sp1
   - name: plv2-man5
     type: manifest
     steps:
       - IN: plv2-image12
+        versionName: "deploy.1"
       - IN: plv21
        # versionNumber: 1000
       #- IN: plv2-envimage
