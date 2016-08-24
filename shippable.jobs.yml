@@ -7,7 +7,7 @@ jobs:
       #- IN: plv2-envimage
       - IN: plv2-params1
       - IN: plv21
-      - in: envp1
+      - IN: envp1
         #switch: off
        # applyTo:
         #  - plv2-envimage
