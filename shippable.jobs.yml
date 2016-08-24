@@ -108,7 +108,7 @@ jobs:
     steps:
       - IN: sample-scriptTS1
       - IN: plv2-tripubdeployP4
-      - in: plv2-dopts1
+      - IN: plv2-dopts1
       #- IN: myEmail
       - IN: triggerv2sp1
       - TASK:
