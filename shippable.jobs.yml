@@ -112,6 +112,6 @@ jobs:
       - IN: release-versionn5
       - IN: triggerv2sp1
       - TASK:
-        - script: ./IN/sample-scriptT1/gitRepo/echo.sh
+        - script: ./IN/sample-scriptTS1/gitRepo/echo.sh
 
       
