@@ -111,7 +111,7 @@ jobs:
        # switch: off
       - IN: plv2-tripubdeployP4
       - IN: flecs-dopts5
-      - fl-dopts6invalid
+      - IN: fl-dopts6invalid
       #- IN: myEmail
       - IN: triggerv2sp1
       - TASK:
