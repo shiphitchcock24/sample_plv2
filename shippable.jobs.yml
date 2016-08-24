@@ -107,9 +107,7 @@ jobs:
   # #  serial: true
     steps:
       - IN: sample-scriptTS1
-      - IN: plv2-version
-      - IN: plv2-scale2
-      - IN: release-versionn5
+      - IN: plv2-tripubdeployP4
       - IN: triggerv2sp1
       - TASK:
         - script: ./IN/sample-scriptTS1/gitRepo/echo.sh
