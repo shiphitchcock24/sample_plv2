@@ -100,6 +100,7 @@ jobs:
       - IN: foo-resource
       - IN: plv2-man5 
       - IN: flecs-dopts5
+      - IN: fl-dopts6invalid
       - IN: tripub-cluster4
       
   - name: runShT1
@@ -110,6 +111,7 @@ jobs:
        # switch: off
       - IN: plv2-tripubdeployP4
       - IN: flecs-dopts5
+      - fl-dopts6invalid
       #- IN: myEmail
       - IN: triggerv2sp1
       - TASK:
