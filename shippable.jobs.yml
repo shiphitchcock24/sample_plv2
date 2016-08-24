@@ -50,7 +50,7 @@ jobs:
     type: release
     steps:
       - IN: plv2-version
-      - IN: plv2-man5
+      #- IN: plv2-man5
       #- IN: triggerv2sp2
       - TASK: managed
     #  bump: major
