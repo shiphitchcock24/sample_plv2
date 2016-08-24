@@ -162,6 +162,12 @@ resources:
     version:
       params:
         foo: bar1
+        
+  - name: dep-dopts1
+    type: dockerOptions
+    version:
+      memory: 100
+      cpuShares: 2
 #foo: bar2
  # - name: infra-repo
   #  type: gitRepo
