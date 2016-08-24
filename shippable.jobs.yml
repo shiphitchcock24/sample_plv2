@@ -13,6 +13,7 @@ jobs:
       #- IN: plv2-envimage
       - IN: plv2-params1
       - IN: plv2dcl2-manifestTWO
+      - IN: release-versionn5
         #switch: off
        # applyTo:
         #  - plv2-envimage
