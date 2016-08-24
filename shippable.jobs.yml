@@ -9,13 +9,16 @@ jobs:
     type: manifest
     steps:
       - IN: plv2-image12
+      - IN: plv21
         #versionNumber: 1000
       #- IN: plv2-envimage
       - IN: plv2-params1
-        switch: off
+        applyTo:
+          plv2-image12 
+        #switch: off
       #- IN: plv2dcl2-manifestTWO
-      - OUT: plv21
-      - OUT: plv2dcl2-manifestTWO
+      #- OUT: plv21
+      #- OUT: plv2dcl2-manifestTWO
      # - IN: lb-loadb1
         #switch: off
        # applyTo:
