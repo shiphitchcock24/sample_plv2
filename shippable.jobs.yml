@@ -107,6 +107,7 @@ jobs:
   # #  serial: true
     steps:
       - IN: sample-scriptTS1
+        switch: off
       - IN: plv2-tripubdeployP4
       - IN: plv2-dopts1
       #- IN: myEmail
