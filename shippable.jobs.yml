@@ -1,4 +1,10 @@
 jobs:
+  - name: plv2dcl2-manifestTWO
+    type: manifest
+    steps:
+      - IN: plv2-image12
+     # - IN: infra-repo
+      - IN: triggerv2sp1
   - name: plv2-man5
     type: manifest
     steps:
@@ -6,8 +12,7 @@ jobs:
        # versionNumber: 10000
       #- IN: plv2-envimage
       - IN: plv2-params1
-      - IN: flecs-dopts5
-      - IN: dep-dopts1
+      - IN: plv2dcl2-manifestTWO
         #switch: off
        # applyTo:
         #  - plv2-envimage
